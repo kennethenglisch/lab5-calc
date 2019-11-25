@@ -128,7 +128,7 @@ public class UserInterface
             calc.equals();
         }
         else if (command.equals("÷")) {
-        	calc.devide();
+        	calc.divide();
         }
         else if (command.equals("x")) {
         	calc.multiply();

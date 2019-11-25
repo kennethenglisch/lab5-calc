@@ -28,7 +28,7 @@ public class HexUserInterface extends UserInterface{
 		
 		
 		// check box for enable / disable hex buttons
-		jBox = new JCheckBoxMenuItem("Hex?");
+		jBox = new JCheckBoxMenuItem("Hexadecimal?");
 	    jBox.addActionListener(new ActionListener() {
 			
 			@Override
@@ -56,7 +56,7 @@ public class HexUserInterface extends UserInterface{
 	    hexContent.add(checkPanel, BorderLayout.NORTH);
 	    
 	    // creating panel and buttons for hex buttons
-		hexPanel = new JPanel(new GridLayout(3,3));
+		hexPanel = new JPanel(new GridLayout(3, 2));
 		hexPanel.setVisible(false);
 		
 		addButton(hexPanel, "F");
@@ -81,15 +81,15 @@ public class HexUserInterface extends UserInterface{
 
 		if (jBox.getState()) {
 			if (command.equals("0") ||
-					 command.equals("1") ||
-				     command.equals("2") ||
-				     command.equals("3") ||
-				     command.equals("4") ||
-				     command.equals("5") ||
-				     command.equals("6") ||
-				     command.equals("7") ||
-				     command.equals("8") ||
-				     command.equals("9")) 
+				command.equals("1") ||
+				command.equals("2") ||
+				command.equals("3") ||
+				command.equals("4") ||
+				command.equals("5") ||
+				command.equals("6") ||
+				command.equals("7") ||
+				command.equals("8") ||
+				command.equals("9")) 
 			{
 				calc.numberPressed(Integer.parseInt(command));
 			}
@@ -134,7 +134,7 @@ public class HexUserInterface extends UserInterface{
 	        calc.equals();
 	    }
 	    else if (command.equals("÷")) {
-        	calc.devide();
+        	calc.divide();
         }
         else if (command.equals("x")) {
         	calc.multiply();
@@ -143,8 +143,6 @@ public class HexUserInterface extends UserInterface{
 	    {
 	    	calc.clear();
 	    }
-	
-		
 		redisplay();
 	}
 	

@@ -95,9 +95,9 @@ public class CalcEngine
     }
     
     /**
-     * The 'devision' button was pressed.
+     * The 'division' button was pressed.
      */
-    public void devide() 
+    public void divide() 
     {
 		applyOperator('÷');
 	}
